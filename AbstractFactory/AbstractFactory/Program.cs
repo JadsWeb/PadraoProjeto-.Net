@@ -15,7 +15,10 @@ namespace AbstractFactory
             if (company == "Uber")
             {
                 transportFactory = new UberTransport();
-            } else
+            } else if (company == "Lime")
+            {
+                transportFactory = new LimeTransport();
+            } else 
             {
                 transportFactory = new NineNineTransport();
             }
