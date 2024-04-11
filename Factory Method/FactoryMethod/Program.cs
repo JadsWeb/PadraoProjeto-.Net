@@ -19,7 +19,11 @@ namespace FactoryMethod
             } else if(args.Length > 0 && args[0] == "--log")
             {
                 transport = new MotorcycleTransport();
-            } else
+            } else if (args.Length > 0 && args[0] == "--delivery")
+            {
+                transport = new BikeTransport();
+            }
+            else
             {
                 Console.WriteLine("Selecione o tipo da entrega.");
             }
