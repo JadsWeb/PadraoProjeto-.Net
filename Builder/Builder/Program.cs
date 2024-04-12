@@ -25,6 +25,12 @@ namespace Builder
 
             Console.WriteLine($"Criado uma veículo do tipo: {truck.VehicleType}");
 
+            director.ConstructSUV();
+
+            Vehicle suv = builder.GetVehicle();
+
+            Console.WriteLine($"Criado uma veículo do tipo: {suv.VehicleType}");
+
             Console.ReadLine();
 
 

@@ -39,5 +39,10 @@ namespace Builder.Builders
             vehicle.VehicleType = vehicleType;
         }
 
+        public void SetAirBag(AirBag airBag)
+        {
+            vehicle.AirBag = airBag;
+        }
+
     }
 }
