@@ -22,6 +22,7 @@ namespace ChainOfResponsibility
             Middleware middleware = new CheckUserMiddleware(server);
 
             middleware.LinkWith(new CheckPermissionMiddleware());
+            middleware.LinkWith(new CheckWeakPassword());
 
             server.SetMiddleware(middleware);
 
