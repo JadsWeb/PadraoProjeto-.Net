@@ -21,5 +21,12 @@ namespace Bridge.Transmissions
             Console.WriteLine("Comentários liberados na live.");
 
         }
+
+        public void Record()
+        {
+
+            Console.WriteLine("Live sendo gravada...");
+
+        }
     }
 }

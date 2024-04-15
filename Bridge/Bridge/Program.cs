@@ -38,6 +38,7 @@ namespace Bridge
             StartLiveAdvanced(new YouTube());
             StartLiveAdvanced(new Facebook());
             StartLiveAdvanced(new TwitchTV());
+            StartLiveAdvanced(new DLive());
 
             Console.ReadLine();
 
